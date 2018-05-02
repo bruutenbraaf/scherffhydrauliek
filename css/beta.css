@@ -1,0 +1,63 @@
+.hoofd_menu ul li {
+	color:#FAB52A;
+}
+
+ul.sub-menu {
+	position: absolute;
+	background: white;
+	padding:10px 0px;
+	margin-top:6px;	
+	display: none;
+	border-radius: 0px 0px 3px 3px;
+	transition-duration: 0.3s;
+	margin-left:-15px;
+}
+
+.menu-item-has-children:after {
+	padding-left:6px;
+	content:'\f107';
+	font-family: fontAwesome;
+}
+
+li.menu-item-has-children:hover{
+	color:#2A2A2A;
+}
+
+.grid {
+	display: grid !important;
+	animation: showIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.rotate {
+	transition-duration: 0.3s;
+	animation: rotateIn;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+.open-menu-link .fa {
+	padding-right: 0px !important;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+	transform: rotate(180deg);
+  }
+}
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+	opacity: 1;
+  }
+}
+
+
+/* Animatie toevoegen aan ul.sub-menu zodat hij display;grid krijgt.. zo krijgt de sub-menu een mooie breedte.*/ 
