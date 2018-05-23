@@ -12,6 +12,32 @@
 		float:left;
 	}
 	
+	h1 {
+    	font-size: 1.6em;
+	}
+	
+	.h4, h4 {
+    	font-size: 1.2rem;
+	}
+	
+	.meer-informatie .container .row [class*="col-md-"] {
+	    display: flex;
+	    min-height: 56px;
+	    align-items: center;
+	}
+	
+	.meer-informatie h1 {
+	    font-size: 28px;
+	}
+	
+	.content_page h1 {
+	    font-family: 'Titillium Web', sans-serif;
+	    font-weight: 600;
+	    font-size: 1em;
+	    color: #FAB52A;
+	    letter-spacing: 0px;
+	}
+		
 	ul.sub-menu {
 	position: absolute;
 	background: white;
