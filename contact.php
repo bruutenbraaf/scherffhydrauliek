@@ -21,10 +21,10 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-md-3 sidebar-contact">
 				<h1>Contactgegevens</h1>
-					Peppeling 65<br>
-					9603 HK Hoogezand<br><br>
-					+31 (0)6 – 298 882 53<br>
-info@scherffhydrauliek.nl
+					<?php the_field( 'adres', 'option' ); ?><br>
+					<?php the_field( 'postcode', 'option' ); ?><br><br>
+					<?php the_field( 'telefoonnummer_scherff', 'option' ); ?><br>
+					<?php the_field( 'emailadres', 'option' ); ?>
 			</div>
 			<div class="col-md-9">
 <form class="modals multi-step" id="demo-modals-3">

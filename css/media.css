@@ -12,6 +12,18 @@
 		float:left;
 	}
 	
+	.home-tabs .col-md-3 {
+		width:40%;
+		max-width: 40%;
+		flex: 0 0 40%;
+	}
+	
+	.home-tabs .col-md-9 {
+		width:60%;
+		max-width: 60%;
+		flex: 0 0 60%;
+	}
+	
 	h1 {
     	font-size: 1.6em;
 	}
@@ -145,5 +157,19 @@
 	.copyright ul li {
 	    float: left;
 	    padding: 0px 10px 0px 0px;
+	}
+}
+
+@media only screen and (max-width: 1024px) { 
+	.home-tabs .col-md-3 {
+		width:100%;
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	
+	.home-tabs .col-md-9 {
+		width:100%;
+		max-width: 100%;
+		flex: 0 0 100%;
 	}
 }
