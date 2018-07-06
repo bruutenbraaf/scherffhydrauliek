@@ -158,9 +158,16 @@
 	    float: left;
 	    padding: 0px 10px 0px 0px;
 	}
+	
+	footer .col-md-3 {
+		max-width: 50% !important;
+		width: 50% !important;
+		flex: 0 0 50% !important;
+		padding-bottom:34px;
+	}
 }
 
-@media only screen and (max-width: 1024px) { 
+@media only screen and (max-width: 812px) { 
 	.home-tabs .col-md-3 {
 		width:100%;
 		max-width: 100%;
@@ -172,4 +179,11 @@
 		max-width: 100%;
 		flex: 0 0 100%;
 	}
+	
+	footer .col-md-3 {
+		max-width: 100% !important;
+		width: 100% !important;
+		flex: 0 0 100% !important;
+	}
+	
 }
