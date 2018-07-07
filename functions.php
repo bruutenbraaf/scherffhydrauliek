@@ -446,9 +446,9 @@ function custom_breadcrumbs() {
 
 acf_add_options_page( array(
 
-'page_title' 	=> 'Portfolio instellingen',
-'menu_title' 	=> 'Portfolio instel.',
-'menu_slug' 	=> 'portfolio_instellingen',
+'page_title' 	=> 'Projecten instellingen',
+'menu_title' 	=> 'Projecten instel.',
+'menu_slug' 	=> 'Projecten_instellingen',
 'capability' 	=> 'edit_posts', 
 'icon_url' => 'dashicons-category',
 'position' => 9
@@ -472,6 +472,33 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 10 );
 
-
+function revcon_change_post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Projecten';
+    $submenu['edit.php'][5][0] = 'Projecten';
+    $submenu['edit.php'][10][0] = 'Nieuw project';
+    $submenu['edit.php'][16][0] = 'Project Tag';
+}
+function revcon_change_post_object() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Projecten';
+    $labels->singular_name = 'Projecten';
+    $labels->add_new = 'Nieuw project';
+    $labels->add_new_item = 'Project toevoegen';
+    $labels->edit_item = 'Bewerk project';
+    $labels->new_item = 'Project';
+    $labels->view_item = 'Bekijk project';
+    $labels->search_items = 'Zoek een project';
+    $labels->not_found = 'Project niet gevonden';
+    $labels->not_found_in_trash = 'Geen project gevonden in prullemand';
+    $labels->all_items = 'Alle projecten';
+    $labels->menu_name = 'Projecten';
+    $labels->name_admin_bar = 'Projecten';
+}
+ 
+add_action( 'admin_menu', 'revcon_change_post_label' );
+add_action( 'init', 'revcon_change_post_object' );
 
 ?>

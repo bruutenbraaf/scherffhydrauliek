@@ -9,8 +9,8 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
-					<h1><?php the_field( 'titel' ); ?></h1>
-					<?php the_field( 'intro_tekst' ); ?>
+					<h1>Projecten</h1>
+					Huidige en recent opgeleverde projecten
 				</div>
 			</div>
 		</div>
