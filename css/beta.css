@@ -4,15 +4,13 @@
 
 ul.sub-menu {
 	position: absolute;
-    background: white;
-    padding: 10px 0px;
-    margin-top: 0px;
-    padding: 0px 15px !important;
-    display: block;
-    border-radius: 0px 0px 3px 3px;
-    transition-duration: 0.3s;
-    margin-left: -15px;
-    /* margin: 0px; */
+	background: white;
+	padding:10px 0px;
+	margin-top:6px;	
+	display: none;
+	border-radius: 0px 0px 3px 3px;
+	transition-duration: 0.3s;
+	margin-left:-15px;
 }
 
 .menu-item-has-children:after {

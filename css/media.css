@@ -55,7 +55,7 @@
 	background: white;
 	padding:5px 15px !important;
 	margin-top:6px;	
-	display: block;
+	display: none;
 	border-radius: 0px 0px 3px 3px;
 	transition-duration: 0.3s;
 	margin-left:-15px;
@@ -172,6 +172,14 @@
 		width:100%;
 		max-width: 100%;
 		flex: 0 0 100%;
+	}
+	
+	ul.sub-menu {
+		position: absolute;
+	    background: white;
+	    padding: 0px !important;
+	    margin: 0px !important;
+	    display: block !important;
 	}
 	
 	.home-tabs .col-md-9 {
