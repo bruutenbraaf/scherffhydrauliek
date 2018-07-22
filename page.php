@@ -12,7 +12,7 @@
 				    <div class="carousel-item">
 					    <?php $slide_afbeelding = get_sub_field( 'slide_afbeelding' ); ?>
 						<?php if ( $slide_afbeelding ) { ?>
-						<div style="background:url('<?php echo $slide_afbeelding['url']; ?>') no-repeat center center fixed; background-size: cover;" class="w-100 slide"><div class="overlay"></div>
+						<div style="background:url('<?php echo $slide_afbeelding['url']; ?>') no-repeat center center fixed; background-size: cover !important;" class="w-100 slide"><div class="overlay"></div>
 							<div class="container">
 								<div class="row">
 									<div class="col-md-8">
