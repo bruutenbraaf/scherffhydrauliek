@@ -1,8 +1,22 @@
 	.mobile_menu {
 		display: none !important;
 	}
+	
+	.slide-img {
+		background-repeat:no-repeat !important;
+		background-position: center center !important;
+		background-attachment: fixed !important;
+		background-size: cover !important;
+	}
 
 @media only screen and (max-width: 1024px) {
+
+		.slide-img {
+		background-repeat:no-repeat !important;
+		background-position: center center !important;
+		background-attachment: scroll !important;
+		background-size: cover !important;
+		}
 	.row-contact [class*='col-']:first-child {
 		width: 70%;
 		float:left;
@@ -173,6 +187,13 @@
 		max-width: 100%;
 		flex: 0 0 100%;
 	}
+	
+	.slide-img {
+		background-repeat:no-repeat !important;
+		background-position: center center !important;
+		background-attachment: scroll !important;
+		background-size: cover !important;
+		}
 	
 	.m-menu-col .menu-hoofdmenu-container {
 	    width: 100%;
